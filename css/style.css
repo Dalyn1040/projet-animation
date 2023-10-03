@@ -4,7 +4,7 @@ body{
 }
 
 @font-face {
-    font-family: 'Dolce Vita';
+    font-family: 'Dolcelight';
     src: url('DolceVitaLight.eot');
     src: url('DolceVitaLight.eot?#iefix') format('embedded-opentype'),
         url('DolceVitaLight.woff2') format('woff2'),
@@ -16,26 +16,108 @@ body{
 }
 
 @font-face {
-    font-family: 'NEOTERIC';
-    src: url('NEOTERIC-Bold.eot');
-    src: url('NEOTERIC-Bold.eot?#iefix') format('embedded-opentype'),
-        url('NEOTERIC-Bold.woff2') format('woff2'),
-        url('NEOTERIC-Bold.woff') format('woff'),
-        url('NEOTERIC-Bold.ttf') format('truetype');
+    font-family: 'NEO';
+    src: url('../font/NEOTERIC-Bold.eot');
+    src: url('../font/NEOTERIC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NEOTERIC-Bold.woff2') format('woff2'),
+        url('../font/NEOTERIC-Bold.woff') format('woff'),
+        url('../font/NEOTERIC-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Dolce Vita';
-    src: url('DolceVita.eot');
-    src: url('DolceVita.eot?#iefix') format('embedded-opentype'),
-        url('DolceVita.woff2') format('woff2'),
-        url('DolceVita.woff') format('woff'),
-        url('DolceVita.ttf') format('truetype');
+    font-family: 'Dolce';
+    src: url('../font/DolceVita.eot');
+    src: url('../font/DolceVita.eot?#iefix') format('embedded-opentype'),
+        url('../font/DolceVita.woff2') format('woff2'),
+        url('../font/DolceVita.woff') format('woff'),
+        url('../font/DolceVita.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+
+body {
+    background-image: url(img/fond3.jpg);
+}
+}
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    height: 50px;
+    margin: 10px;
+}
+header nav{
+display: flex;
+align-items: end;
+margin-right: 10px;
 }
 
+header nav ul{
+    list-style: none;
+    display: flex;
+
+
+}
+header nav ul li{
+    display: flex;
+}
+header nav ul li a{
+    height: 30px;
+    display: block;
+    box-sizing: border-box;
+    font-family:"NEO" ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+    transition:0.5s
+}
+header nav ul li span{
+    margin: 0 15px;
+}
+
+main section{
+    height: calc(100vh-70px);
+    background: url(../img/fond3.jpg) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section h1{
+    justify-content: center;
+    font-family: "Dolce";
+    font-size: 100px;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+}
+main section h1::first-line {
+    font-family: "Dolce light";
+}
+/*************les pages******/
+section>div{
+    display: flex;
+}
+
+section>div div {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border: 2px solid white;
+}
+/*rotation*/
+#rot>div div:first-of-type{
+    transform: rotate(45deg);
+}
+#rot>div div:nth-of-type(2):hover{
+    transform: rotate(45deg);
+}
+#rot>div div:nth-of-type(3){
+    transition: 0,5s; /* ajoute l'effet sur la rotation*/
+}
