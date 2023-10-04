@@ -139,22 +139,20 @@ section>div div {
 #rot>div div:nth-of-type(3) :hover{
     transform: rotate(45deg);
 }
-
-/*déplacement*/
+/* Déplacement */
 
 #deplacement>div div:first-of-type{
-    transform: translate(10px, 15px);/*va déplacer la div de 10px sur l'axe des X et de 15px sur l'axe des Y*/
-}
-#deplacement>div div:nth-of-type(2):hover{
-    transform: translateY(15px);/*va déplacer la div de 15px sur l'axe des Y*/
-}
-#deplacement>div div:nth-of-type(3){
-    transition: 0.5s; /*ajoute l'effet sur le déplacement*/
-}
-#deplacement>div div:nth-of-type(3):hover{/*au survol (hover) ça se déplace*/
-    transform: translateX(15px);/*va déplacer la div de 15px sur l'axe des X*/
-}
-
+    transform: rotate(45deg);
+ }
+ #deplacement>div div:nth-of-type(2):hover{
+     transform: rotate(45deg);
+ }
+ #deplacement>div div:nth-of-type(3){
+     transition: 0.5s; /* ajoute l'effet sur la rotation*/
+ }
+ #deplacement>div div:nth-of-type(3) :hover{
+     transform: rotate(45deg);
+ }
 /* inclinaison*/
 #inclinaison>div div:first-of-type{
     transform: skewX(15deg);
